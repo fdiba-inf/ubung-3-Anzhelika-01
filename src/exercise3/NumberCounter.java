@@ -12,7 +12,7 @@ import java.util.Scanner;
       double average = 0.0;
       int count = 0;
 
-        num = input.nextDouble();
+      num = input.nextDouble();
       while(num != 0)
       {
         count++;
