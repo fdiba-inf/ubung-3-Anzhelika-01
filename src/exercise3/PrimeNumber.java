@@ -18,6 +18,7 @@ public class PrimeNumber{
     if(num % i == 0)
     {
       prime = false;
+      break;
     }
     i++;
   }
