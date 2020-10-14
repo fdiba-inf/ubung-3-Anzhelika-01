@@ -17,7 +17,7 @@ public class NumberSearch {
           }
           else
           {
-            System.out.println(i + " ");
+            System.out.println(i);
             count = 0;
           }
         }
