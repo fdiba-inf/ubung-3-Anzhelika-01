@@ -22,6 +22,6 @@ public class PrimeNumber{
     }
     i++;
   }
-    System.out.println("PrimeNumber: " + prime);
+    System.out.println("Prime number: " + prime);
   }
 }
