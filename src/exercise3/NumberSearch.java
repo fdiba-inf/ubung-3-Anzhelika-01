@@ -10,20 +10,16 @@ public class NumberSearch {
       {
         if(i % 5 == 0 && i % 6 == 0)
         {
-          if(count <= 10)
+          if(count < 9)
           {
-          System.out.print(i);
+          System.out.print(i + " ");
           count++;
           }
           else
           {
-            System.out.println(i);
+            System.out.println(i + " ");
             count = 0;
           }
-        }
-        else
-        {
-          break;
         }
       }
     }
