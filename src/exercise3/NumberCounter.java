@@ -5,18 +5,21 @@ import java.util.Scanner;
     public static void main(String[] args){
 
       Scanner input = new Scanner(System.in);
-      double num;
       int positiveNumbers = 0;
       int negativeNumbers = 0;
       double sum = 0.0;
-      double average = 0.0;
+      double averageOfNum = 0.0;
       double count = 0.0;
 
       while(true)
       {
-      num = input.nextDouble();
+      double num = input.nextDouble();
         count++;
-        if(num % 2 == 0)
+        if(num == 0)
+        {
+          break;
+        }
+        if(num > 0)
         {
           positiveNumbers++;
         }
@@ -26,10 +29,10 @@ import java.util.Scanner;
         }
         sum += num;
       }
-      average = sum/count;
+      averageOfNum = sum / count;
       System.out.println("Positive numbers: " + positiveNumbers);
       System.out.println("Negative numbers: " + negativeNumbers);
       System.out.println("Sum: " + sum);
-      System.out.println("Average: " + average);
+      System.out.println("Average: " + averageOfNum);
     }
   }
