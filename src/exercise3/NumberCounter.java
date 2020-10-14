@@ -10,11 +10,11 @@ import java.util.Scanner;
       int negativeNumbers = 0;
       double sum = 0.0;
       double average = 0.0;
-      int count = 0;
+      double count = 0.0;
 
-      num = input.nextDouble();
-      while(num != 0)
+      while(true)
       {
+      num = input.nextDouble();
         count++;
         if(num % 2 == 0)
         {
