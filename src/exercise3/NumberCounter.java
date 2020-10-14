@@ -13,8 +13,7 @@ import java.util.Scanner;
 
       while(true)
       {
-      double num = input.nextDouble();
-        count++;
+      int num = input.nextInt();
         if(num == 0)
         {
           break;
@@ -27,6 +26,7 @@ import java.util.Scanner;
         {
           negativeNumbers++;
         }
+        count++;
         sum += num;
       }
       averageOfNum = sum / count;
