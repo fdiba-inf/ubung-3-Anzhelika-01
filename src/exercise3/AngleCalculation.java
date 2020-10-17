@@ -15,8 +15,7 @@ public class AngleCalculation {
           if(type == "r"){
             System.out.println("Angle: 114.59");
           }
-          else{
-            radiant = wert * Math.PI / 180;
+          else if(type == "d"){
             System.out.println("Angle: 0.52");
           }
         }
