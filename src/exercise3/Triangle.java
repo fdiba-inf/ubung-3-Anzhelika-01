@@ -5,19 +5,17 @@ import java.util.Scanner;
 public class Triangle {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in)
+
+        while(true)
+        {
         double a = input.nextDouble();
         double b = input.nextDouble();
         double c = input.nextDouble();
-        String type;
-        boolean n = true;
           if(a < 0 || b < 0 || c < 0 || a+b<c || b+c<a || a+c<b){
             System.out.print("Values are not correct!");
             n = false;
           }
-
-        while(n == true)
-        {
           double p = (a + b + c) / 2;
           double area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
           if(a == b && b == c && a == c)
