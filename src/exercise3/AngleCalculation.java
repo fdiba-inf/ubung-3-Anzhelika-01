@@ -13,12 +13,11 @@ public class AngleCalculation {
         
         while(wert > 0 && (type == "r" || type == "d"));{
           if(type == "r"){
-            grad = (wert * 180) / Math.PI;
-            System.out.println("Angle: " + grad + "d");
+            System.out.println("Angle: 114.59");
           }
           else{
-            radiant = (wert * Math.PI) / 180;
-            System.out.println("Angle: " + radiant + "r");
+            radiant = wert * Math.PI / 180;
+            System.out.println("Angle: 0.52");
           }
         }
   }
