@@ -7,13 +7,12 @@ public class NamePrinter
   {
     Scanner input = new Scanner(System.in);
     String name = input.nextLine();
-    int count = 0;
+   
 
-    while(count <= name.lenght())
+    for (int count = 0; count < name.length(); count++)
     {
-      char name = in.CharAt(count);
-      System.out.println("* " + name + " *");
-      count++;
+      char letter = name.charAt(count);
+      System.out.println("* " + letter + " *");
     }
   }
 }
