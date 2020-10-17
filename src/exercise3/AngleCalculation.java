@@ -11,7 +11,7 @@ public class AngleCalculation {
         double radiant;
         double grad;
         
-        do{
+        while(wert > 0);{
           if(type == "r"){
             grad = (wert * 180) / (Math.PI / 180);
             System.out.println("Angle: " + grad + "d");
@@ -20,6 +20,6 @@ public class AngleCalculation {
             radiant = (wert * Math.PI) / 180;
             System.out.println("Angle: " + radiant + "r");
           }
-        }while(wert > 0);
+        }
   }
 }
