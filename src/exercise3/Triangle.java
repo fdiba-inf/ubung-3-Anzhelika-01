@@ -32,7 +32,7 @@ public class Triangle {
             type = "scalene";
           }
           System.out.println("Area: " + area);
-          System.out.println("Triangle " + type);
+          System.out.println("Triangle: " + type);
         }
    }
 }
