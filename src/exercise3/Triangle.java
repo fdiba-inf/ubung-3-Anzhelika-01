@@ -10,13 +10,14 @@ public class Triangle {
         double b = input.nextDouble();
         double c = input.nextDouble();
         String type;
-
-        while(true)
-        {
+        boolean n = true;
           if(a < 0 || b < 0 || c < 0 || a+b<c || b+c<a || a+c<b){
             System.out.print("Values are not correct!");
-            break;
+            n = false;
           }
+
+        while(n == true)
+        {
           double p = (a + b + c) / 2;
           double area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
           if(a == b && b == c && a == c)
