@@ -11,9 +11,9 @@ public class Triangle {
         double c = input.nextDouble();
         String type;
 
-        while(a > 0 && b > 0 && c > 0 && a+b>c && b+c>a && a+c>b)
+        while(true)
         {
-          if(false){
+          if(a < 0 || b < 0 || c < 0 || a+b<c || b+c<a || a+c<b){
             System.out.print("Values are not correct!");
             break;
           }
