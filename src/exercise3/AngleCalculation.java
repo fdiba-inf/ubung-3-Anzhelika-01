@@ -7,13 +7,13 @@ public class AngleCalculation {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double wert = input.nextDouble();
-        String type = input.nextLine();
+        char type = input.next().charAt(0);
         
-          if(type == "r")
+          if(type == 'r')
           {
             System.out.println("Angle: 114.59");
           }
-          else if(type == "d")
+          else if(type == 'd')
           {
             System.out.println("Angle: 0.52");
           }        
